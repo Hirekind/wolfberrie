@@ -1,0 +1,157 @@
+
+<html>
+ <head>
+    <title>Xuan Yue - Custody</title>
+    <link rel="stylesheet" href="project-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="buy-proto.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86359410-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="name">
+        <a href="index.html">Xuan Yue</a>
+      </div>
+      <div class="links">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="title-section">
+      <div class="title-content">
+        <div class="title-text">
+          <h1 class="project-title">Buy Bitcoin</h1>
+          <p>When buying bitcoin through Coinbase, you need to choose how you will pay for it. Your choice of payment method will affect the amount you can buy and how fast you will receive the currency. This was a prototype I created to make this information easily understandable. </p>
+        </div>
+        <div>
+          <img class="home-img" src="images/buy-hero.png">
+        </div>
+      </div>
+    </div>
+    <div class="content-section">
+    </div>
+
+    <div class="project-section">
+      <div class="section-intro">
+        <h2>Choosing a payment method</h2>
+        <div class="black-line"></div>
+        <p>Your choice of payment method affects the time it takes to receive the bitcoin and the limit of how much you can buy. </p>
+      </div>
+      <div class="icon-list">
+        <div class="icon-list-item">
+          <h3 class="icon-list-title time">
+            Delivery time
+          </h3>
+          <p>When buying Bitcoin with your bank account the bitcoin will usually take 2-3 days to arrive. Other payment methods usually allow you to receive your bitcoin instantly. In my design user can see the different delivery times easily in the payment method table.</p>
+        </div>
+        <div class="icon-list-item">
+          <h3 class="icon-list-title limits">
+            Limits
+          </h3>
+          <p>Because of fraud detection reasons, buying with bank account usually allows you to buy the biggest amount. Other payment methods will usually have significantly lower limits. In my design the list of payment methods automatically filters based on the amount you type in. </p>
+        </div>
+      </div>
+    </div>
+    <div class="gray">
+       <div class="project-section">
+        <h2>Try it out</h2>
+        <div class="black-line"></div>
+        <p>Using HTML, CSS and Javascript (+ jQuery) I created an interactive prototype to display the main interactions of the design. Try typing different amounts to the input field on the left to see how it works.</p>
+         <div class="buybox-section">
+          <div class="buybox-title">
+            <h4>Buy Bitcoin</h4>
+          </div>
+          <div class="buybox-inputs">
+            <div class="usd-input input-active">
+              <div class="buy-usd">USD</div>
+              <input id="usd-input-field" value="90">
+            </div>
+            <img class="exchange" src="images/exchange.svg">
+            <div class="btc-input">
+              <div class="buy-btc">BTC</div>
+              <input id="btc-input-field" value="0.01234">
+            </div>
+          </div>
+         <table class="method-table">
+          <tr class="method selected bank-row">
+            <td><img class="check" src="images/check.svg"></td>
+            <td>Bank of America *****1121</td>
+            <td>2-3 days</td>
+            <td>2000 USD / day</td>
+          </tr>
+          <tr class="method bank-row">
+            <td></td>
+            <td>USD Wallet</td>
+            <td>instant</td>
+            <td>500 USD / day</td>
+          </tr>
+          <tr class="method credit-row">
+            <td></td>
+            <td>PayPal</td>
+            <td>Instant</td>
+            <td>300 USD / day </td>
+          </tr>
+          <tr class="method debit-row">
+            <td></td>
+            <td>Add new payment method</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="buy-button">
+          <a href="javascript:;">Buy Bitcoin - $105 USD</a>
+        </div>
+        <div class="limits-notification">
+          <div class="limit-img-wrapper">
+            <img src="images/blue-lock.png">
+          </div>
+          <div class="max-limit-wrapper">
+            <h2 class="notification-title">Raise Your Limits</h2>
+            <p>The maximum amount you can buy is
+              <a href="javascript:;" id="max-limit">2,000 USD</a>. <br>
+              To buy more, raise your limits by
+              <a href="javascript:;">adding your ID</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="project-section">
+      <div class="section-intro">
+        <h2>Main interactions</h2>
+        <div class="black-line"></div>
+        <p>When the user types in an amount the list of the payment methods filters accordingly.</p>
+        <div class="navigation-screenshot">
+          <img src="images/buy-screenshot.png">
+        </div><br>
+         <p>When the user types in an amount that is higher than any of their limits, a notification is shown that encourages the user to add an ID to increase their limits.</p>
+        <div class="navigation-screenshot">
+          <img src="images/buy-screenshot2.png">
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="footer-links">
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+        </div>
+        <p>&copy; Xuan Yue 2019</p>
+      </div>
+    </div>
+
+</body>
+</html>

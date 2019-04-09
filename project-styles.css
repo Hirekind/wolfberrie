@@ -687,7 +687,7 @@ tr:nth-child(4) td:nth-child(2) {
 /*Hotel page*/
 
 @media (min-width: 1000px) {
-	img .hotel-app-image {
+	img .ETHMessenger-image {
 		margin-bottom: 110px;
 	}
 }
@@ -806,7 +806,7 @@ tr:nth-child(4) td:nth-child(2) {
 		padding-bottom: 16px;
 	}
 
-	.hotel-img {
+	.eth-img {
 		width: 150px;
 		height: auto;
 		position: absolute;
