@@ -48,7 +48,7 @@ a {
 	}
 
 	.menu .links a {
-		color: #252525;
+		color: #7269FC;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 900;
@@ -58,11 +58,15 @@ a {
 }
 
 .menu .links a:hover{
-	color: #636363;
+	color: #7269FC;
+}
+
+.menu .links a:active{
+	color: #252525;
 }
 
 .menu .links a {
-	color: #252525;
+	color: #636363;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -71,7 +75,7 @@ a {
 }
 
 .menu .name a {
-	color: #252525;
+	color: #7269FC;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -122,7 +126,18 @@ a {
 	.title-section img {
 		display: block;
 		height: auto;
+		position: relative;
+		left: -90px;
 	}
+}
+
+
+/* custom */
+
+.icon {
+	position: relative;
+	left: -50px;
+	bottom: -8px;
 }
 
 .home-img {
@@ -666,6 +681,31 @@ tr:nth-child(4) td:nth-child(2) {
 	opacity: 0.3;
 }
 
+.hero {
+	max-width: 1050px;
+	margin: 0 auto;
+	flex: 1;
+}
+
+.hero-swan {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
+
+.greeting {
+	/* color: #494775; */
+}
+
+.tagline{
+	text-align: center;
+	color: #7C7C7C;
+	font-size: 1em;
+	position: relative;
+	top: -20px;
+	padding-bottom: 3em;
+}
+
 .projects {
 	max-width: 1050px;
 	margin: 0 auto;
@@ -684,11 +724,11 @@ tr:nth-child(4) td:nth-child(2) {
 	align-items: center;
 	padding: 50px 50px;
 }
-/*Hotel page*/
+/*ETHMessenger page*/
 
 @media (min-width: 1000px) {
-	img .ETHMessenger-image {
-		margin-bottom: 110px;
+	img .eth-image {
+		/* margin-bottom: 110px; */
 	}
 }
 
@@ -723,7 +763,8 @@ tr:nth-child(4) td:nth-child(2) {
 	}
 
 	.mobile-card {
-		background: #ffffff url("images/hotel-mockup1.png") no-repeat 120% -58%;
+		/* background: #ffffff url("images/eth-app.png") no-repeat 120% -58%; */
+		background: #ffffff url("images/eth-app.png") no-repeat 65% -65%;
 	}
 
 	.settings-card {
@@ -743,7 +784,9 @@ tr:nth-child(4) td:nth-child(2) {
 	}
 
 	.buy-card {
-		background: #ffffff url("images/buy-mockup-1.png") no-repeat 107% 7%;
+		/* background: #ffffff url("images/buy-mockup-1.png") no-repeat 107% 7%; */
+    background: url(images/test.jpg);
+    background-size: contain;
 	}
 
 	.card-right {
@@ -809,7 +852,7 @@ tr:nth-child(4) td:nth-child(2) {
 	.eth-img {
 		width: 150px;
 		height: auto;
-		position: absolute;
+		position: relative;
 		top: -77px;
     	left: 40px;
 	}
