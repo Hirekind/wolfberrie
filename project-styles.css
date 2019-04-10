@@ -130,6 +130,12 @@ a {
 		position: relative;
 		left: -140px;
 	}
+	.no-shift {
+		display: block;
+		height: auto;
+		position: relative;
+		left: 0px !important;
+	}
 }
 
 
@@ -768,6 +774,7 @@ tr:nth-child(4) td:nth-child(2) {
 		background: #ffffff url("images/eth-app.png") no-repeat 85% -65%;
 	}
 
+
 	.settings-card {
 		align-items: flex-end;
 	    background: #ffffff url("images/settings-mockup-1.png") no-repeat -13% 52%;
@@ -794,6 +801,7 @@ tr:nth-child(4) td:nth-child(2) {
 		display: flex;
 		flex-direction: column;
 	}
+
 }
 
 
@@ -806,6 +814,29 @@ tr:nth-child(4) td:nth-child(2) {
 	color: #7C7C7C;
 	padding-bottom: 30px;
 	max-width: 300px;
+}
+
+.left200 {
+	margin-left: 200px;
+}
+
+.purple {
+	color: #7269FC;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.xuan-card {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/xuan.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#about {
+	max-width: 600px;
+	color: rgba(255,255,255,0.8);
 }
 
 
@@ -890,6 +921,11 @@ tr:nth-child(4) td:nth-child(2) {
 	    left: 79px;
 	}
 
+	.xuan-img {
+		height: auto;
+		position: absolute;
+	}
+
 	.black-line {
 		display: none;
 	}
@@ -964,4 +1000,85 @@ tr:nth-child(4) td:nth-child(2) {
 	.index .project-box {
 		margin: 50px 20px;
 	}
+
+/* co-occurence */
+pre, code, textarea {
+  font-family: "Menlo", monospace;
+}
+
+code {
+  line-height: 1em;
+}
+
+textarea {
+  font-size: 100%;
+}
+
+body > pre {
+  border-left: solid 2px #ccc;
+  padding-left: 18px;
+  margin: 2em 0 2em -20px;
+}
+
+.html .value,
+.javascript .string,
+.javascript .regexp {
+  color: #756bb1;
+}
+
+.html .tag,
+.css .tag,
+.javascript .keyword {
+  color: #3182bd;
+}
+
+.comment {
+  color: #636363;
+}
+
+.html .doctype,
+.javascript .number {
+  color: #31a354;
+}
+
+.html .attribute,
+.css .attribute,
+.javascript .class,
+.javascript .special {
+  color: #e6550d;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+blockquote q {
+  line-height: 1.5em;
+  display: inline;
+}
+
+blockquote q:before,
+blockquote q:after {
+  content: "";
+}
+
+
 }
