@@ -87,6 +87,7 @@ a {
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: 1px;
+	margin-top: -30px;
 }
 
 .title-section {
@@ -127,7 +128,7 @@ a {
 		display: block;
 		height: auto;
 		position: relative;
-		left: -90px;
+		left: -140px;
 	}
 }
 
@@ -764,7 +765,7 @@ tr:nth-child(4) td:nth-child(2) {
 
 	.mobile-card {
 		/* background: #ffffff url("images/eth-app.png") no-repeat 120% -58%; */
-		background: #ffffff url("images/eth-app.png") no-repeat 65% -65%;
+		background: #ffffff url("images/eth-app.png") no-repeat 85% -65%;
 	}
 
 	.settings-card {
