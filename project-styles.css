@@ -147,6 +147,26 @@ a {
 	bottom: -8px;
 }
 
+.disabled-link {
+	color: #7269FC !important;
+	border-bottom: 1px solid #7269FC !important;
+}
+
+.disabled-link:hover {
+	color: #7269FC !important;
+  border-bottom: 1px solid #7269FC !important;
+}
+
+.right-img {
+	float: right;
+	max-width: 50%;
+}
+
+.full-width p {
+	max-width: 100%;
+
+}
+
 .home-img {
 	max-width: 500px;
 	margin-right: 120px;
@@ -829,9 +849,16 @@ tr:nth-child(4) td:nth-child(2) {
 }
 
 .xuan-card {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/xuan.jpg');
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/xuan.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: fit-content;
+}
+
+@media (max-width: 850px) {
+	.about {
+		color: #7C7C7C;
+	}
 }
 
 #about {
@@ -919,6 +946,7 @@ tr:nth-child(4) td:nth-child(2) {
 	    width: 136px;
 	    top: -93px;
 	    left: 79px;
+		display: none;
 	}
 
 	.xuan-img {
