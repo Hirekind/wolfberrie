@@ -775,7 +775,7 @@ tr:nth-child(4) td:nth-child(2) {
 
 	.home-card {
 		align-items: flex-end;
-		background: #ffffff url("images/home-mockup-1.png") no-repeat 13% 22%;
+		background: #ffffff url("images/cymetric.png") no-repeat 13% 22%;
 
 	}
 
@@ -850,11 +850,11 @@ tr:nth-child(4) td:nth-child(2) {
 	}
 
 	.eth-img {
-		width: 150px;
+		width: 85px;
 		height: auto;
 		position: relative;
-		top: -77px;
-    	left: 40px;
+		top: -145px;
+    	/* left: 40px; */
 	}
 
 	.travel-img {
