@@ -125,9 +125,46 @@
         <div class="full-width">
           <h2>Research</h2>
           <div class="black-line"></div>
-          <p>Two main persona</p>
-          <p><b>1.</b> &nbsp;&nbsp;&nbsp;Compliance Officer</p>
-          <p><b>2.</b> &nbsp;&nbsp;&nbsp;Auditor</p>
+          <p>Research methods:</p>
+            <ul>
+              <li>Competitive analysis</li>
+              <li>Expert interviews with Harris Beach team (indirect information in lieu of interviewing Chief Compliance Officers)</li>
+              <li>5 customer interviews with auditors</li>
+            </ul>
+          <p>After 6 expert interviews with members of the partner team and 5 contextual inquiries with auditors, I focused on the experiences of two main personas:</p>
+          <div>
+            <img class="right-img-short pull-up300" src="images/persona-officer.jpeg">
+          </div>
+          <p><b>1.</b> &nbsp;&nbsp;&nbsp;<b>Compliance Officer</b>: the compliance owner inside the organization.</p>
+            <ul>Jobs:
+              <li>Manage information systems</li>
+              <li>Manage ownership of regulatory controls</li>
+              <li>Accountable for completion of tasks related to controls</li>
+              <li>Need to see both the forest and the trees</li>
+            </ul>
+            <ul>Pains:
+              <li>Poor understanding of ownership across departments</li>
+              <li>Each department has its own system for managing compliance - hard to see the forest</li>
+              <li>Have to work with auditors to understand where the gaps are and how to address them, but no direct control of the timeline for the completion of the audit</li>
+              <li>No standard way to do assessments; may work with multiple independent assessors</li>
+              <li>Hard to get to 100% compliance</li>
+            </ul>
+          <p><b>2.</b> &nbsp;&nbsp;&nbsp;<b>Auditor</b>: The external auditor who performs assessments on the organization, information system, and control instance levels.</p>
+            <ul>Jobs:
+              <li>Need to evaluate which regulations an org needs to comply with</li>
+              <li>Need to interview each department to understand control processes are being implemented and by whom</li>
+              <li>Summarize results and findings (gaps)</li>
+              <li>Give a score for how compliant each department's information systems are for each control as well as an over all score for compliance on the highest level</li>
+            </ul>
+            <ul>Pains:
+              <li>The sheer number of people involved in compliance is daunting</li>
+              <li>The information-gathering process is slow, unknown timeline for how long it takes to get all the information</li>
+              <li>Gaps in information, confusion of ownership</li>
+              <li>Ability to get the right information from different auditors who had performed past audits on the same systems</li>
+            </ul>
+            <div class="pull-up300">
+              <img class="right-img-short pull-up300" src="images/persona-auditor.jpeg">
+            </div>
         </div>
         <br/>
         <br/>
@@ -135,12 +172,18 @@
         <h2>Strategy</h2>
         <div class="black-line"></div>
         <p>Research insights led us to understand that the most addressable aspects of the problem are:
-        * Traceability of each team’s compliance activities back to a regulation
-        * Clear assignment of ownership for each task
-        * Single source of truth for the entire organization
-        * Allowing auditors to have access to past data in a comprehensive and organized fashion, reduce communication overhead with hundreds of individuals
+          <ul>
+            <li>Traceability of each team's compliance activities back to a regulation</li>
+            <li>Clear assignment of ownership for each task</li>
+            <li>Single source of truth for the entire organization</li>
+            <li>Allowing auditors to have access to past data in a comprehensive and organized fashion, reduce communication overhead with hundreds of individuals</li>
+          </ul>
+        <p>
+          This led to a sequential system design that is end-to-end, mapping out the relationship between each actor and each step of the compliance process. I focused on two main design strategies:
+          <p><b>1.</b> &nbsp;&nbsp;&nbsp;I designed step-wise navigation menu that follows the lifecycle of compliance activities, starting with managing information and ending with the audit.</p>
+          <p><b>2.</b> &nbsp;&nbsp;&nbsp;To reduce cognitive load, we optimized for familiar design patterns over newfangled ones; simple list-detail views. Lastly, we broke out complex processes as workflow-modals and gave the ability to reuse past audits to help auditors manager optimize their workflow.</p>
+        </p>
 
-        Hence we designed a system that is end-to-end, mapping out the relationship between each actor and each step of the compliance process. 1. We designed step-wise navigation menu that follows the lifecycle of compliance activities, starting with managing information and ending with the audit. 2. To reduce cognitive load, we optimized for familiar design patterns over newfangled ones; simple list-detail views. Lastly, we broke out complex processes as workflow-modals and gave the ability to reuse past audits to help auditors manager optimize their workflow.
         </p>
       </div>
     </div>
@@ -150,15 +193,20 @@
         <div class="black-line"></div>
         <img class="right-img" src="images/design1.jpeg">
 
-                <p>Design Constraints
-        * Massive number of features and data to work with; complex flows
-            * Work-around: reusable components using Angular Material Design to reduce engineering overhead
-            * Usage of strong design patterns to help clients familiarize with usage and reduce complexity
-            * Get eng input to reduce complexity of engineering, minimizing eng effort rather than most frictionless end user experience (enterprise)
-        * Working with a Law Firm with banks we were deeply embedded within the sales cycle and had a lot of restrictions on the way in which we conducted customer interviews. The feedback cycles were short, but most of the feedback came from non-end-users.
-            * Work-around: All decisions relating to domain expertise relied on expert feedback from law firm in lieu of end-users from bank;
-            * important UX-related decisions were tested with 3 - 5 Caetra internal team members (i.e. design of side nav information architecture)
-        </p>
+        <p><b>Design Constraints</b></p>
+        <p><b>1.</b> &nbsp;&nbsp;&nbsp;Massive number of features and data to work with; complex flows</p>
+          <ul>
+            <li><i>Work-around:</i> Reusable components using Google Material Angular framework to reduce engineering overhead</li>
+            <li>Usage of strong design patterns to help clients familiarize with usage and reduce complexity</li>
+            <li>Get weekly eng input to reduce complexity of engineering and feature-set, minimizing eng effort rather than most frictionless end user experience (enterprise)</li>
+          </ul>
+          <p><b>2.</b> &nbsp;&nbsp;&nbsp;Working with a Law Firm with banks we were deeply embedded within the sales cycle and had a lot of restrictions on the way in which we conducted customer interviews. The feedback cycles were short, but most of the feedback came from non-end-users.</p>
+            <ul>
+              <li><i>Work-around:</i> All decisions relating to domain expertise relied on expert feedback from law firm in lieu of end-users from bank;</li>
+              <li>important UX-related decisions were tested with 3 - 5 Caetra internal team members (i.e. design of side nav information architecture)</li>
+            </ul>
+
+
         <div class="project-section">
         <div class="screenshot-section">
           <div>
@@ -184,31 +232,31 @@
         </div>
         <div class="screenshot-section">
           <div>
-            <img src="images/coinbase-numbers.png">
           </div>
-          <div class="screenshot-info">
+          <div class="screenshot-info pull-left">
             <h3>Automated control instance management</h3>
             <p>As our research surfaced that compliance officers have a lot of trouble mapping controls onto information systems, one of the key value propositions of the system is to provide automated control instance generation based on inputs. The workflow becomes a simple two-step process:
                 <p><b>1.</b> &nbsp;&nbsp;&nbsp;Create information system, adding regulatory objectives</p>
                 <p><b>2.</b> &nbsp;&nbsp;&nbsp;Approve automatically generated pending control instances and publish to organization</p>
           </div>
+          <img src="images/caetra-review.jpg">
         </div>
         <div class="screenshot-section">
           <div>
-            <img src="images/coinbase-features.png">
+            <img src="images/caetra-controls.jpg">
           </div>
           <div class="screenshot-info">
-            <h3>Screenshots and features</h3>
-            <p>Buying Bitcoin can easily seem like a challenging task. However with Coinbase the process is very easy. This is why I wanted to show the process of purchasing bitcoin accompanied with some product screenshots. The feature list highlights how secure and versatile Coinbase brokerage is. </p>
+            <h3>Security Control Management</h3>
+            <p>As each information system must have a security control instance to meet a regulatory line item, I designed a simple process for compliance officers to easily look up and modify security controls active for their org. </p>
           </div>
         </div>
         <div class="screenshot-section">
-          <div>
-            <img src="images/coinbase-carousel.png">
+          <div class="screenshot-info pull-left">
+            <h3>Reuse of Assessment Flow for Auditors</h3>
+            <p>One of the most painful problems surfaced during our research is the lack of traceability for past assessment work that has been done by previous auditors. Additionally, banks and auditors often elect to use an assessment that has been done in a previous year to cover a current-year requirement. Currently, the assessments are duplicated manually. I designed this feature to allow auditors to instantly reuse a previous audit. (Click for interactive prototype.)</p>
           </div>
-          <div class="screenshot-info">
-            <h3>Product carousel</h3>
-            <p>The carousel on the bottom of the page shows the user what other products Coinbase has. This section is dedicated to the three groups that are would not be the main user group for  the Coinbase brokerage: developers, merchants and traders.</p>
+          <div>
+            <img src="images/caetra-assess.jpg">
           </div>
         </div>
       </div>
@@ -227,35 +275,6 @@
               </p>
           </div>
         </div> -->
-        <div class="screenshot-section">
-          <div>
-            <img src="images/coinbase-numbers.png">
-          </div>
-          <div class="screenshot-info">
-            <h3>Media links and big numbers</h3>
-            <p>Coinbase is frequently featured in some of the most prominent financial newspapers, so I made sure to include links to these articles. We decided to be very transparent about the company and show some key numbers. The main objective of this section is to increase trust.</p>
-          </div>
-        </div>
-        <div class="screenshot-section">
-          <div>
-            <img src="images/coinbase-features.png">
-          </div>
-          <div class="screenshot-info">
-            <h3>Screenshots and features</h3>
-            <p>Buying Bitcoin can easily seem like a challenging task. However with Coinbase the process is very easy. This is why I wanted to show the process of purchasing bitcoin accompanied with some product screenshots. The feature list highlights how secure and versatile Coinbase brokerage is. </p>
-          </div>
-        </div>
-        <div class="screenshot-section">
-          <div>
-            <img src="images/coinbase-carousel.png">
-          </div>
-          <div class="screenshot-info">
-            <h3>Product carousel</h3>
-            <p>The carousel on the bottom of the page shows the user what other products Coinbase has. This section is dedicated to the three groups that are would not be the main user group for  the Coinbase brokerage: developers, merchants and traders.</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="footer-wrapper">
       <div class="footer">
