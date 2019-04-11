@@ -153,6 +153,12 @@ a {
 	margin: 0 auto;
 }
 
+@media (max-width: 999px) {
+.eth-mobile-text {
+	position: relative;
+	top: -95px;
+}
+}
 .left-img {
 	max-width: 600px !important;
 	max-height: 400px !important;
@@ -988,16 +994,16 @@ tr:nth-child(4) td:nth-child(2) {
 		width: 85px;
 		height: auto;
 		position: relative;
-		top: -145px;
+		top: -107px;
     	/* left: 40px; */
 	}
 
 	.travel-img {
 		height: auto;
 		position: absolute;
-	    width: 177px;
+	    width: 84px;
 	    top: -92px;
-	    left: 34px;
+	    left: 110px;
 	}
 
 	.home-img {
