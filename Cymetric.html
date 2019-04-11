@@ -211,6 +211,19 @@
 
 
         <div class="project-section">
+          <div class="screenshot-section">
+            <div>
+            </div>
+            <div class="screenshot-info pull-left">
+              <h3>Contact Management</h3>
+              <p>Our top research insight from auditors yielded that it is painful to work with such an astronomical number of people. Hence, I designed an integrated contact managment tool with the following considerations:
+                  <p><b>1.</b> &nbsp;&nbsp;&nbsp;Roles, not people, are the owners of a compliance objective. Hence, this CRM is designed around "contacts", knowing that people will change roles in the organization</p>
+                  <p><b>2.</b> &nbsp;&nbsp;&nbsp;The responsibilities and information of each contact is in this database for reference, even if they are not a Cymetric user.</p>
+            </div>
+            <div class="small-img">
+              <img src="images/caetra-contacts.jpg">
+            </div>
+          </div>
         <div class="screenshot-section">
           <div>
             <img class="left-img" src="images/cymetric-nav.jpg">
@@ -225,6 +238,8 @@
                 <p><b>3.</b> &nbsp;&nbsp;&nbsp;Qualitative testing and iterate from feedback</p>
               </p>
               <p>This navigation hierarchy was designed to conform to the natural workflow of domain experts. The flat architecture also allows Cymetric users to navigate fluidly between different parts of the compliance management lifecycle and for easy cross-referencing.</p>
+              <p>The data was rigorously analyzed to produce the navigational architecture based on the responses from interviews.</p>
+              <p>See details on the <a class="purple" href="https://docs.google.com/presentation/d/14XVXZOA3ngJCgEkJbfYJfzy9KfPrEtkD-5ks8Rfe4w8/edit#slide=id.g3c4bc021ba_0_227">Navigation Design Process</a> here.</p>
           </div>
           <!-- <div>
             <img class="full-img" src="images/cardsort-tree.jpg">
@@ -242,10 +257,12 @@
                 <p><b>1.</b> &nbsp;&nbsp;&nbsp;Create information system, adding regulatory objectives</p>
                 <p><b>2.</b> &nbsp;&nbsp;&nbsp;Approve automatically generated pending control instances and publish to organization</p>
           </div>
-          <img src="images/caetra-review.jpg">
+          <div class="small-img">
+            <img src="images/caetra-review.jpg">
+          </div>
         </div>
         <div class="screenshot-section">
-          <div>
+          <div class="small-img">
             <img src="images/caetra-controls.jpg">
           </div>
           <div class="screenshot-info">
@@ -258,26 +275,28 @@
             <h3>Reuse of Assessment Flow for Auditors</h3>
             <p>One of the most painful problems surfaced during our research is the lack of traceability for past assessment work that has been done by previous auditors. Additionally, banks and auditors often elect to use an assessment that has been done in a previous year to cover a current-year requirement. Currently, the assessments are duplicated manually. I designed this feature to allow auditors to instantly reuse a previous audit.</p>
           </div>
-          <div>
+          <div class="small-img">
             <img src="images/caetra-assess.jpg">
           </div>
         </div>
+        <div class="pad-top100 pad-bottom100">
+          <h2>Closing thoughts</h2>
+          <div class="black-line"></div>
+          <p>Cymetric is a full-featured application that has instances running in production for 2 clients. Here's what I learned:</p>
+            <ul>
+              <li>Auditors and compliance personnel have given positive qualitative feedback in our user interviews. However, the product could stand to improve with more rigorous usability testing.</li>
+              <li>The most useful features we've included on the application are the step-wise navigation and workflows to guide users through the compliance lifecycle.</li>
+              <li>The most painful part of using this app is visually distinguishing between canonical controls, control instances, and pending control instances. The design framework could do a better job in distinguishing between these with a clearer visual identity.</li>
+            </ul>
+            <p>On the product design roadmap:</p>
+            <ul>
+              <li>Conducting more heuristic evaluations and usability studies to discover friction points. </li>
+              <li>A/B testing alternate UX solutions to current friction points</li>
+              <li>Refactoring components to minimize redundancies and reinforce design patterns</li>
+              <li>Updating the design system and create a customized frontend framework, extending Material Angular.</li>
+            </ul>
+        </div>
       </div>
-        <!-- <div class="screenshot-section">
-          <div><img src="images/cardsort-matrix.jpg"></div>
-          <div class="screenshot-info">
-            <h2>1. Navigation</h2>
-            <div class="black-line"></div>
-            <h3>1. Navigational Clarity</h3>
-            <p>
-              The first task we set out to do was to map out the different list-detail views that will house the essential data for the compliance management lifecycle. My design process:
-              <p><b>1.</b> &nbsp;&nbsp;&nbsp;Brainstorm list of featureset with stakeholders</p>
-              <p><b>2.</b> &nbsp;&nbsp;&nbsp;Card sorting exercise with stakeholders and engineering team</p>
-              <p><b>3.</b> &nbsp;&nbsp;&nbsp;Qualitative testing and iterate from feedback</p>
-
-              </p>
-          </div>
-        </div> -->
 
     <div class="footer-wrapper">
       <div class="footer">

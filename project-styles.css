@@ -153,6 +153,10 @@ a {
 	margin: 0 auto;
 }
 
+.small-img {
+	max-width: 45% !important;
+}
+
 @media (max-width: 999px) {
 .eth-mobile-text {
 	position: relative;
@@ -269,6 +273,10 @@ figure img{
 
 .pad-bottom100 {
 	padding-bottom: 100px !important;
+}
+
+.pad-bottom30 {
+	padding-bottom: 30px !important;
 }
 
 .pad-section550 {
