@@ -147,6 +147,33 @@ a {
 	bottom: -8px;
 }
 
+.full-img {
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+}
+
+.left-img {
+	max-width: 600px !important;
+	max-height: 400px !important;
+}
+
+.iphone-prototype {
+	height: 97%;
+	margin: 0 auto;
+	float: right;
+  position: relative;
+  left: -40%;
+}
+
+.untitled-prototype {
+	height: 97%;
+	margin: 0 auto;
+	float: right;
+  position: relative;
+  left: 5%;
+}
+
 .disabled-link {
 	color: #7269FC !important;
 	border-bottom: 1px solid #7269FC !important;
@@ -163,8 +190,22 @@ a {
 }
 
 .full-width p {
-	max-width: 100%;
+	max-width: 40%;
 
+}
+
+.pull-up {
+	position: relative;
+	top: -150px;
+}
+
+/* .pull-left {
+	postition: relative;
+	left: -300px;
+} */
+
+.pad-section550 {
+	padding-bottom: 550px !important;
 }
 
 .home-img {
