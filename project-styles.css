@@ -222,9 +222,34 @@ figure img{
 	top: -150px;
 }
 
+.pull-up50 {
+	position: relative;
+	top: -50px;
+}
+
+.pull-up75 {
+	position: relative;
+	top: -75px;
+}
+
+.pull-up100 {
+	position: relative;
+	top: -100px;
+}
+
 .pull-up300 {
 	position: relative;
 	top: -300px;
+}
+
+.pull-up350 {
+	position: relative;
+	top: -350px;
+}
+
+.pull-right350 {
+	position: relative;
+	right: -350px;
 }
 
 .pull-left {
@@ -994,7 +1019,7 @@ tr:nth-child(4) td:nth-child(2) {
 		width: 85px;
 		height: auto;
 		position: relative;
-		top: -107px;
+		top: -110px;
     	/* left: 40px; */
 	}
 
