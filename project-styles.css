@@ -979,6 +979,10 @@ tr:nth-child(4) td:nth-child(2) {
 	color: #ffffff;
 }
 
+.white-bg {
+	background-color: #ffffff !important;
+}
+
 .xuan-card {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/xuan.jpg');
 	background-repeat: no-repeat;
