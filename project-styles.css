@@ -148,7 +148,7 @@ a {
 }
 
 .full-img {
-	width: 75%;
+	width: 85%;
 	display: block;
 	margin: 0 auto;
 }
@@ -259,8 +259,24 @@ figure img{
 	margin-right: 40px;
 }
 
+.pad-top100 {
+	padding-top: 100px !important;
+}
+
+.pad-top50 {
+	padding-top: 50px !important;
+}
+
+.pad-bottom100 {
+	padding-bottom: 100px !important;
+}
+
 .pad-section550 {
 	padding-bottom: 550px !important;
+}
+
+.pad-section350 {
+	padding-bottom: 350px !important;
 }
 
 .pad-section200 {
