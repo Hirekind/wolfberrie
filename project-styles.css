@@ -162,6 +162,7 @@ a {
 	position: relative;
 	top: -95px;
 }
+
 }
 .left-img {
 	max-width: 600px !important;
@@ -945,7 +946,7 @@ tr:nth-child(4) td:nth-child(2) {
 		/* background: #ffffff url("images/untitled-mock.png") no-repeat 190% -28%; */
 	}
 
-	.buy-card {
+	.custody-card {
 		/* background: #ffffff url("images/buy-mockup-1.png") no-repeat 107% 7%; */
     background: url(images/test.jpg);
     background-size: contain;
