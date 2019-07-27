@@ -87,7 +87,7 @@ a {
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: 1px;
-	margin-top: -30px;
+	margin: -15px 0px 0px 62.5px;
 }
 
 .title-section {
@@ -108,6 +108,13 @@ a {
 	max-width: 400px;
 }
 
+@media (max-width: 1000px) {
+	.title-text {
+		margin: 0 auto;
+		max-width: 80vw;
+	}
+}
+
 @media (min-width: 1000px) {
 	.title-section {
 		padding: 20px 30px 0px 30px;
@@ -116,6 +123,12 @@ a {
 
 	.title-text {
 		margin-top: -40px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.title-text {
+		margin: 0 auto;
 	}
 }
 
@@ -158,16 +171,15 @@ a {
 }
 
 @media (max-width: 999px) {
-.eth-mobile-text {
-	position: relative;
-	top: -95px;
+	.eth-mobile-text {
+		position: relative;
+		top: -95px;
+	}
 }
-
-}
-.left-img {
+/* .left-img {
 	max-width: 600px !important;
 	max-height: 400px !important;
-}
+} */
 
 .iphone-prototype {
 	height: 97%;
@@ -197,13 +209,48 @@ a {
 
 .right-img {
 	float: right;
-	max-width: 50%;
+	max-width: 90%;
 }
 
 .right-img-short {
 	float: right;
-	max-width: 50%;
+	max-width: 90%;
 	max-height: 38em;
+}
+
+.center-img {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+figure {
+	width: 31vw;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+	figure {
+		width: 90vw;
+	}
+}
+
+figure img {
+	display: block;
+	width: 90%;
+}
+
+.crop img{
+	margin: -20% 0;
+}
+.crop-top img{
+  margin: -20% 0 0 0;
+}
+
+@media (max-width:800px){
+	.right-img {
+		max-width: 100%;
+	}
 }
 
 /* figure{
@@ -217,14 +264,16 @@ figure img{
    margin:-21.875% 0;
 } */
 
-.full-width p {
-	max-width: 40%;
-
-}
 
 .pull-up {
 	position: relative;
 	top: -150px;
+}
+
+@media (max-width:800px) {
+	.pull-up, .pull-up50, .pull-up75, .pull-up100, .pull-up300, .pull-up350 {
+		top: 0px !important;
+	}
 }
 
 .pull-up50 {
@@ -264,8 +313,18 @@ figure img{
 	margin-right: 40px;
 }
 
+@media (max-width: 1000px) {
+	.pull-left {
+		margin-right: 0;
+	}
+}
+
 .pad-top100 {
 	padding-top: 100px !important;
+}
+
+.pad-top20 {
+	padding-top: 20px !important;
 }
 
 .pad-top50 {
@@ -290,6 +349,12 @@ figure img{
 
 .pad-section200 {
 	padding-bottom: 200px !important;
+}
+
+@media (max-width: 1000px) {
+	.pad-section550 {
+		padding-bottom: 50px !important;
+	}
 }
 
 .home-img {
@@ -346,6 +411,12 @@ p {
 	max-width: 500px;
 }
 
+@media (max-width: 1000px) {
+	p {
+		max-width: 80vw;
+	}
+}
+
 ul, li {
 	line-height: 28px;
 	font-size: 0.95em;
@@ -370,7 +441,103 @@ ul, li {
 	padding: 60px 30px 30px 30px;
 	margin: 0 auto;
 	max-width: 1200px;
+	display: grid;
+	grid-template-columns: 1.5fr 2fr;
+	grid-gap: 20px;
+	overflow: hidden;
 }
+
+.project-subsection {
+	padding: 0px 30px 30px 30px;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: 1.5fr 2fr;
+	grid-gap: 20px;
+}
+
+/* @media (min-width: 801px) and (max-width: 1500px) {
+	.project-section, .project-subsection {
+		grid-template-columns: 1fr 1fr;
+	}
+} */
+
+.full-width {
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+	.project-section, .project-subsection{
+	grid-template-columns: 1fr;
+}
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+	.full-width h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.full-width {
+		max-width: 80vw;
+	}
+	.span2 {
+	grid-column: 1 / span 2;
+	}
+}
+
+.col1 {
+	grid-column: 1;
+}
+
+.col2 {
+	grid-column: 2;
+}
+
+@media (min-width: 1001px) {
+	.full-screen-col2 {
+		grid-column: 2;
+	}
+	.span2 {
+	grid-column: 1 / span 2;
+	}
+}
+
+
+.row1 {
+	grid-row: 1;
+}
+
+.row2 {
+	grid-row: 2;
+}
+
+@media (max-width:1000px) {
+	.small-screen-row2 {
+		grid-row: 2;
+	}
+}
+
+@media (min-width:1001px) {
+	.full-screen-row2 {
+		grid-row: 2;
+	}
+}
+
+
+.row3 {
+	grid-row: 3;
+}
+
+@media (min-width:1001px) {
+	.full-screen-row3 {
+		grid-row: 3;
+	}
+}
+
+.row4 {
+	grid-row: 4;
+}
+
 
 .about-section {
 	padding: 60px 30px 60px 30px;
@@ -454,6 +621,17 @@ ul, li {
 	padding-right: 60px;
 }
 
+@media (max-width: 1000px) {
+	.icon-list-item {
+		padding-right: 0px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	li {
+		text-align: left;
+	}
+}
+
 h3.icon-list-title {
 	padding: 25px 0px 0px 50px;
 	height: 50px;
@@ -493,6 +671,14 @@ h3.room-service {
     margin-top: 40px;
 }
 
+@media (max-width: 1000px) {
+	.gray {
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 30px !important;
+	}
+}
+
 .footer-wrapper {
 	padding: 36px 0px;
     margin-top: 40px;
@@ -527,6 +713,12 @@ h3.room-service {
 
 .section-intro {
 	padding-bottom: 30px;
+	display: grid;
+	grid-gap: 20px;
+}
+
+.grid-img {
+	grid-column: 2/3;
 }
 
 .heat-map {
@@ -1152,6 +1344,14 @@ tr:nth-child(4) td:nth-child(2) {
 }
 
 @media (max-width: 1000px) {
+
+	.name, .name p {
+		margin: 0 auto;
+	}
+
+	.menu, .project-title, .title-text p {
+		text-align: center;
+	}
 
 	.index .menu .name {
 		text-align: center;
