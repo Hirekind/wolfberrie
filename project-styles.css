@@ -156,6 +156,7 @@ a {
 
 .prototype-desktop {
 	max-width: 90vw;
+	max-height: 48vw;
 }
 
 .icon {
@@ -190,7 +191,6 @@ a {
 	margin: 0 auto;
 	float: right;
   position: relative;
-  left: -40%;
 }
 
 .untitled-prototype {
@@ -310,16 +310,29 @@ figure img{
 	right: -350px;
 }
 
+
 .pull-left {
 	/* postition: relative !important;
 	left: -100px; */
 	margin-left: 0 !important;
 	margin-right: 40px;
+	padding-left: 0 !important;
 }
 
 @media (max-width: 1000px) {
 	.pull-left {
 		margin-right: 0;
+	}
+}
+
+@media (min-width: 1000px){
+	.iphone-prototype {
+		left: -40%;
+		top: -50px;
+	}
+	.ios-proto {
+    position: relative;
+    right: -350px;
 	}
 }
 
@@ -468,6 +481,19 @@ ul, li {
 	"a b"
 	"c d"; */
 }
+.project-section-1col {
+	padding: 60px 30px 30px 30px;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	overflow: hidden;
+	/* grid-template-areas:
+	"a b"
+	"c d"; */
+}
 
 .project-subsection {
 	padding: 0px 30px 30px 30px;
@@ -480,6 +506,10 @@ ul, li {
 	/* grid-template-areas:
 	"a b"
 	"c d"; */
+}
+
+.desktop-prototype {
+	margin: 0 auto;
 }
 
 /* @media (min-width: 801px) and (max-width: 1500px) {
@@ -1119,8 +1149,8 @@ tr:nth-child(4) td:nth-child(2) {
 /*ETHMessenger page*/
 
 @media (min-width: 1000px) {
-	img .eth-image {
-		/* margin-bottom: 110px; */
+	.eth-image {
+		max-height: 40vw;
 	}
 }
 
@@ -1380,6 +1410,12 @@ tr:nth-child(4) td:nth-child(2) {
 
 .index {
 	background-color: #F6F6F6;
+}
+
+@media (min-width: 1000px) {
+	.project-title {
+		max-width: 50vw;
+	}
 }
 
 @media (max-width: 1000px) {
