@@ -154,6 +154,10 @@ a {
 
 /* custom */
 
+.prototype-desktop {
+	max-width: 90vw;
+}
+
 .icon {
 	position: relative;
 	left: -50px;
@@ -444,7 +448,25 @@ ul, li {
 	display: grid;
 	grid-template-columns: 1.5fr 2fr;
 	grid-gap: 20px;
+	grid-row-gap: 20px;
 	overflow: hidden;
+	/* grid-template-areas:
+	"a b"
+	"c d"; */
+}
+
+.project-section-even {
+	padding: 60px 30px 30px 30px;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	overflow: hidden;
+	/* grid-template-areas:
+	"a b"
+	"c d"; */
 }
 
 .project-subsection {
@@ -454,6 +476,10 @@ ul, li {
 	display: grid;
 	grid-template-columns: 1.5fr 2fr;
 	grid-gap: 20px;
+	grid-row-gap: 20px;
+	/* grid-template-areas:
+	"a b"
+	"c d"; */
 }
 
 /* @media (min-width: 801px) and (max-width: 1500px) {
@@ -467,7 +493,7 @@ ul, li {
 }
 
 @media (max-width: 1000px) {
-	.project-section, .project-subsection{
+	.project-section, .project-section-even, .project-subsection{
 	grid-template-columns: 1fr;
 }
 }
@@ -537,7 +563,12 @@ ul, li {
 .row4 {
 	grid-row: 4;
 }
-
+.row5 {
+	grid-row: 5;
+}
+.row6 {
+	grid-row: 6;
+}
 
 .about-section {
 	padding: 60px 30px 60px 30px;
@@ -638,6 +669,12 @@ h3.icon-list-title {
 	vertical-align: center;
 }
 
+@media (max-width: 1000px) {
+	h3.icon-list-title {
+		padding: 25px 0px 0px 0px;
+	}
+}
+
 h3.security {
 	background: #ffffff url("images/lock.png") no-repeat left center;
 	background-size: 20px;
@@ -686,17 +723,18 @@ h3.room-service {
 
 
 .screenshot-section {
-	display: flex;
+	/* display: flex; */
 	flex-wrap: wrap;
 	margin-bottom: 50px;
 }
 
-.screenshot-section img {
-	max-width: 100%;
+.screenshot-section img, .col1 img, .col2 img {
+	max-width: 95%;
     height: auto;
     -webkit-box-shadow: 5px 0px 23px 0px rgba(0,0,0,0.1);
 	-moz-box-shadow: 5px 0px 23px 0px rgba(0,0,0,0.1);
 	box-shadow: 5px 0px 23px 0px rgba(0,0,0,0.1);
+	/* padding-bottom: 30px; */
 }
 
 .navigation-screenshot {
@@ -734,6 +772,7 @@ h3.room-service {
 	.screenshot-info {
 		margin-left: 40px;
 		padding: 0px 0px 0px 30px;
+		/* min-height: 475px; */
 	}
 }
 
