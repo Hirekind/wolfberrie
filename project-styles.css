@@ -744,6 +744,27 @@ h3.room-service {
 		padding-top: 0;
 		padding-bottom: 30px !important;
 	}
+	.mobile-visible {
+		display: block;
+	}
+	.desktop-visible {
+		display: none;
+		margin-top: 0
+	}
+	.mobile-pullup {
+		padding-top: 0px !important;
+		position:relative;
+		top: -50px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.mobile-visible {
+		display: none;
+	}
+	.desktop-visible {
+		display: block;
+	}
 }
 
 .footer-wrapper {
